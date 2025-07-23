@@ -1,8 +1,8 @@
 package DAY1;   
 
-class Person {     
+class Persons {     
     String name;     
-    Person(String name) { 
+    Persons(String name) { 
         this.name = name; 
     }     
     public String toString() { 
@@ -11,7 +11,7 @@ class Person {
 } 
 
 public class ReferenceVariable {     
-    public static void changeName(Person p) {         
+    public static void changeName(Persons p) {         
         p.name = "Changed";     
     }     
     public static void main(String[] args) {         
@@ -19,8 +19,8 @@ public class ReferenceVariable {
         int y = x;         
         y = 20;         
         System.out.println("x = " + x); // stays 10         
-        Person p1 = new Person("ayz");         
-        Person p2 = p1;         
+        Persons p1 = new Persons("ayz");         
+        Persons p2 = p1;         
         p2.name = "abc";         
         System.out.println("p1 = " + p1); //         
         changeName(p1);         
