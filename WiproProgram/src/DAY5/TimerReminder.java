@@ -1,7 +1,5 @@
 package DAY5;
 
-//File: TimerReminder.java
-
 abstract class TaskReminder {
  // Abstract method: subclasses define what task to remind about
  abstract void nextTask();
@@ -24,7 +22,7 @@ abstract class TaskReminder {
  }
 }
 
-//Concrete class: define the specific task
+//define the specific task
 class SpecificTaskReminder extends TaskReminder {
  private String task;
 

@@ -2,25 +2,25 @@ package DAY5;
 
 import java.util.Arrays;
 
-interface NameSorter {
- void sortNames(String[] names);
+interface EmployeeNameSorter {
+    void sortEmployeeNames(String[] employeeNames);
 }
 
-class NameSort implements NameSorter {
- public void sortNames(String[] names) {
-     Arrays.sort(names);
-     System.out.println("Sorted names:");
-     for (String name : names) {
-         System.out.println(name);
-     }
- }
+class EmployeeSort implements EmployeeNameSorter {
+    public void sortEmployeeNames(String[] employeeNames) {
+        Arrays.sort(employeeNames);
+        System.out.println("Sorted employee names:");
+        for (String name : employeeNames) {
+            System.out.println(name);
+        }
+    }
 }
 
 public class SortNamesDemo {
- public static void main(String[] args) {
-     String[] names = {"Zara", "Alice", "Bob", "Charlie"};
+    public static void main(String[] args) {
+        String[] employeeNames = {"Zara", "Alice", "Bob", "Charlie"};
 
-     NameSorter sorter = new NameSort();
-     sorter.sortNames(names);
- }
+        EmployeeNameSorter sorter = new EmployeeSort();
+        sorter.sortEmployeeNames(employeeNames);
+    }
 }
