@@ -22,20 +22,20 @@ interface C {
 class MyClass implements A, B, C {
  // Only one implementation needed for common method 'show'
  public void show() {
-     System.out.println("✅ Common show() method implemented in MyClass");
+     System.out.println(" Common show() method implemented in MyClass");
  }
 
  // Implement unique methods
  public void displayA() {
-     System.out.println("📢 Display from interface A");
+     System.out.println(" Display from interface A");
  }
 
  public void displayB() {
-     System.out.println("📢 Display from interface B");
+     System.out.println("Display from interface B");
  }
 
  public void displayC() {
-     System.out.println("📢 Display from interface C");
+     System.out.println(" Display from interface C");
  }
 }
 

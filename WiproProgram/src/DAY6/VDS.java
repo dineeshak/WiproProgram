@@ -4,18 +4,18 @@ interface DemoInterface {
     void normalMethod(); // abstract method (must be implemented by class)
 
     default void defaultMethod() {
-        System.out.println("✅ defaultMethod() inside interface");
+        System.out.println(" defaultMethod() inside interface");
     }
 
     static void staticMethod() {
-        System.out.println("⚡ staticMethod() inside interface");
+        System.out.println(" staticMethod() inside interface");
     }
 }
 
 // Class implements interface
 class DemoClass implements DemoInterface {
     public void normalMethod() {
-        System.out.println("👋 normalMethod() implemented in DemoClass");
+        System.out.println("normalMethod() implemented in DemoClass");
     }
 }
 
