@@ -12,25 +12,14 @@ public class CSVFile {
         File csvFile = new File("C:\\Users\\Dineesha\\Downloads\\sample.csv");
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader(csvFile));
-            String line = br.readLine();
-
-            while (line != null) {
-                // Split each line by comma
-                String[] fields = line.split(",");
-                
-                // Print each field
-                System.out.print("CSV Line: ");
-                for (String field : fields) {
-                    System.out.print(field + " ");
-                }
-                System.out.println(); // new line
-
-                // Read next line
-                line = br.readLine();
+            BufferedReader br2 = new BufferedReader(new FileReader(csvFile));
+            String line = br2.readLine();
+            while(line!=null) {
+		    	System.out.println("File Content "+line);
+		    	line=br2.readLine();
             }
 
-            br.close();
+            br2.close();
         }
         catch (FileNotFoundException e) {
             System.out.println(" File not found error: " + e.getMessage());

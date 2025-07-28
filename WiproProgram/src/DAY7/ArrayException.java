@@ -9,9 +9,13 @@ public class ArrayException {
             System.out.println("Trying to access the 6th element...");
             int value = numbers[5]; // This is index 5, which is the 6th element
             System.out.println("Value: " + value);
-        } catch (ArrayIndexOutOfBoundsException e) {
+            
+        } 
+        catch (ArrayIndexOutOfBoundsException e) {
             System.out.println(" Exception caught: " + e);
-        } finally {
+            
+        }
+        finally {
             System.out.println("Finally block: This always runs, even if there was an exception.");
         }
 

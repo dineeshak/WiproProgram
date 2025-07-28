@@ -21,12 +21,15 @@ public class FactorialException {
             }
 
             System.out.println(" Factorial of " + num + " is: " + factorial);
-        } catch (IllegalArgumentException e) {
+        } 
+        catch (IllegalArgumentException e) {
             System.out.println(" Error: " + e.getMessage());
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             // Catches other exceptions, like if user enters text instead of a number
             System.out.println("Invalid input! Please enter an integer number.");
-        } finally {
+        }
+        finally {
             System.out.println("Finally block: Always runs, closing resources.");
             scanner.close(); // close the scanner to free resources
         }

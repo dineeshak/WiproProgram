@@ -13,6 +13,7 @@ public class ReadFile {
 		try {
 			BufferedReader br1= new BufferedReader(new FileReader(f1));
 			String line=br1.readLine();
+			
 		    while(line!=null) {
 		    	System.out.println("File Content "+line);
 		    	line=br1.readLine();
